@@ -160,6 +160,7 @@ function getArrayFor(arrayType){
         array.push(["https://redacted.ch/", "Redacted"]);
         array.push(["https://www.imgur.com", "Imgur"]);
         array.push(["https://www.isucu.org/", "ISU CU"]);
+        array.push(["https://gazellegames.net/", "Gazelle Games"]);
     }
 
     array.sort(function (a, b){
