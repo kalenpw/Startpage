@@ -115,30 +115,5 @@
         </ul>
         </div>
         
-        <h3>Info 4430 Links</h3>
-        <div id="homework">
-            <?php
-                  
-                $dir = "./Homework/";
-                if(is_dir($dir)){
-                    if($dh = opendir($dir)){
-                        while(($file = readdir($dh)) !== false){
-                            if(is_file("Homework/".$file)){
-                                if(strlen($file) > 3){
-                                    echo(createHwLink($file));
-                                }
-                            }
-                        }
-                        closedir($dh);
-                    }
-                }
-                function createHwLink($url){
-                    $formatted = "<a href='./Homework/" . $url . "' class='quickLink'>" . $url . "</a>";
-                    return $formatted;
-                }
-            ?>
-        </div>
-
-
 	</body>
 </HTML>
