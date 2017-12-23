@@ -152,15 +152,20 @@ function getArrayFor(arrayType){
         array.push(["http://kalenpw.com:81", "Dev Server"]);
     }
     else if(arrayType === QuickLinkTypes.Misc){
-        array.push(["https://www.thepiratebay.se", "Pirate Bay"]);
         array.push(["https://mail.protonmail.com/login", "Proton Mail"]);
-        array.push(["https://animebytes.tv", "Animebytes"]);
         array.push(["http://www.amazon.com", "Amazon"]);
         array.push(["http://xkcd.com/", "XKCD"]);
-        array.push(["https://redacted.ch/", "Redacted"]);
         array.push(["https://www.imgur.com", "Imgur"]);
         array.push(["https://www.isucu.org/", "ISU CU"]);
+    }
+    else if(arrayType === QuickLinkTypes.Torrent){
+        array.push(["https://www.thepiratebay.se", "Pirate Bay"]);
+        array.push(["https://www.torrentdownloads.me", "Torrent Downloads"]);
         array.push(["https://gazellegames.net/", "Gazelle Games"]);
+        array.push(["https://redacted.ch/", "Redacted"]);
+        array.push(["https://animebytes.tv", "Animebytes"]);
+        array.push(["http://kalenpw.com:9091", "Web client"]);
+        
     }
 
     array.sort(function (a, b){
@@ -233,5 +238,7 @@ var QuickLinkTypes = Object.freeze({
     School: 'School',
     Work: 'Work',
     Programming: 'Programming',
-    Misc: 'Misc'
+    Misc: 'Misc',
+    Torrent: 'Torrent'
+
 });
