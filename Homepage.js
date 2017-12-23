@@ -165,7 +165,7 @@ function getArrayFor(arrayType){
         array.push(["https://redacted.ch/", "Redacted"]);
         array.push(["https://animebytes.tv", "Animebytes"]);
         array.push(["http://kalenpw.com:9091", "Web client"]);
-        
+        array.push(["https://awesome-hd.me", "Awesome HD"]);
     }
 
     array.sort(function (a, b){
