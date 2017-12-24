@@ -11,14 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- TODO open links on keypress  -->
 	</head>
 	
-	<body id="body" onkeydown="keypressed(event)">
+	<body id="body">
         <h6 id="date">
-            <?php
-                //echo (date("l Y-m-d") . "<br/>" . date("H:i:s")) ;
-            ?>
         </h6>
         <br>
 
@@ -31,55 +27,64 @@
     			<a href="https://4chan.org/vg/vsg">
     				<img class="icon" src="Images/4chan.png" width="100px" height="100px" alt="Facebook">
     			</a>
-    		</div>
+            </div>
+
             <div>
     			<p><span>2</span></p>
     			<a href="http://kalenpw.com:8096">
     				<img class="icon" src="Images/emby.png" width="100px" height="100px" alt="Emby">
     			</a>
-    		</div>
+            </div>
+
     		<div>
     			<p><span>3</span></p>
     			<a href="https://mail.google.com/mail/">
     				<img class="icon" src="Images/gmail.png" width="100px" height="100px" alt="Gmail">
     			</a>
-    		</div>
+            </div>
+
             <div>
                 <p><span>4</span></p>
                 <a href="https://github.com/kalenpw">
                     <img class="icon" src="Images/github.png" width="100px" height="100px" alt="GitHub">
                 </a>
             </div>
+
     		<div>
     			<p><span>5</span></p>
-    			<a href="http://kalenpw.com">
-    			    <img class="icon" src="Images/khalidor.png" width="100px" height="100px" alt="Khalidor">
-    			</a>
-    		</div>
-    		<div>
-    			<p><span>6</span></p>
     			<a href="http://elearn.isu.edu">
     				<img class="icon" src="Images/moodle.png" width="100px" height="100px" alt="Moodle">
     			</a>
-    		</div>
+            </div>
+
     		<div>
-    			<p><span>7</span></p>
+    			<p><span>6</span></p>
     			<a href="http://www.netflix.com">
     				<img class="icon" src="Images/netflix.png" width="100px" height="100px" alt="Netflix">
     			</a>
-    		</div>
+            </div>
+
+    		<div>
+    			<p><span>7</span></p>
+    			<a href="https://mail.protonmail.com/login">
+    				<img class="icon" src="Images/protonMail.png" width="100px" height="100px" alt="Proton Mail">
+    			</a>
+            </div>
+            
     		<div>
     			<p><span>8</span></p>
     			<a href="http://www.reddit.com">
     				<img class="icon" src="Images/reddit.png" width="100px" height="100px" alt="Reddit">
     			</a>
-    		</div>
+            </div>
+
     		<div>
     			<p><span>9</span></p>
     			<a href="http://www.twitter.com">
     				<img class="icon" src="Images/twitter.png" width="100px" height="100px" alt="Twitter">
     			</a>
-    		</div>
+            </div>
+
     		<div>
     			<p><span>0</span></p>
     			<a href="http://www.youtube.com">
@@ -106,8 +111,6 @@
             while($line = fgets($todoFile)) {
                 $formatted = '<li class="todoItem">' . $line . '</li>';
                 echo $formatted;
-                //echo $line;
-                
             }
             fclose($todoFile);
 
