@@ -6,7 +6,7 @@
         </title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 		<script src="Homepage.js"></script>
-		<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css">
