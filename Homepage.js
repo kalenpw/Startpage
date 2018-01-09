@@ -109,7 +109,8 @@ function getArrayFor(arrayType){
     let array = new Array();
     if(arrayType === QuickLinkTypes.School){
         array.push(["https://bengalweb.isu.edu/cp/home/displaylogin", "Bengal Web"]);
-        array.push(["http://www2.cose.isu.edu/~edwajohn/teaching/2017fall/cs4481/index.html", " CS4481"]);
+        array.push(["https://mcgrmic2.youcanbook.me", "Op Sys Appts"]);
+        array.push(["classroom.google.com", "Linear Algebra Google Classroom"]);
     }
     else if(arrayType === QuickLinkTypes.Work){
         array.push(["https://cms.isu.edu/terminalfour/login.jsp", "T4 Login"]);
