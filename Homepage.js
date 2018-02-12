@@ -83,33 +83,10 @@ function handleH3Click(event) {
 function handleQuickLinkClick(event){
     let clickedContent = event.target.innerText;
     let linksToShow = document.getElementsByClassName(clickedContent);
-    let style = window.getComputedStyle(event.target);
-    let clickedBackgroundColor = style.getPropertyValue("background-color");
-    
-    let lightBlueInRgb = "rgb(99, 217, 255)";
-    let blueInRgb = "rgb(68, 202, 246)";
-    let darkerBlueInRgb = "rgb(8, 130, 170)";
-
-
-    if(clickedBackgroundColor === blueInRgb || clickedBackgroundColor === lightBlueInRgb){
-        event.target.style.backgroundColor = darkerBlueInRgb;
-    }
-    else{
-        event.target.style.backgroundColor = blueInRgb + "!important";
-    }
+    event.target.classList.toggle("expanded");
 
     for(let i = 0; i < linksToShow.length; i++){
-        let style = window.getComputedStyle(linksToShow[i]);
-        let display = style.getPropertyValue("display");
-
-        if(display === "none"){
-            linksToShow[i].style.display = "block";
-        }
-        else{
-            linksToShow[i].style.display = "none";
-        }
-//        linksToShow[i].removeClass("hidden");
-//        linksToShow[i].addClass("showLink");
+        linksToShow[i].classList.toggle("hidden");
     }
 }
 
@@ -125,9 +102,6 @@ function getH3FromContents(str){
     else if (str === "//TODO") {
         id = "todoDisplay";
     }
-    else if(str === "Info 4430 Links"){
-        id = "homework";
-    }
     return document.getElementById(id);
 }
 
@@ -135,7 +109,8 @@ function getArrayFor(arrayType){
     let array = new Array();
     if(arrayType === QuickLinkTypes.School){
         array.push(["https://bengalweb.isu.edu/cp/home/displaylogin", "Bengal Web"]);
-        array.push(["http://www2.cose.isu.edu/~edwajohn/teaching/2017fall/cs4481/index.html", " CS4481"]);
+        array.push(["https://mcgrmic2.youcanbook.me", "Op Sys Appts"]);
+        array.push(["classroom.google.com", "Linear Algebra Google Classroom"]);
     }
     else if(arrayType === QuickLinkTypes.Work){
         array.push(["https://cms.isu.edu/terminalfour/login.jsp", "T4 Login"]);
@@ -152,15 +127,19 @@ function getArrayFor(arrayType){
         array.push(["http://kalenpw.com:81", "Dev Server"]);
     }
     else if(arrayType === QuickLinkTypes.Misc){
-        array.push(["https://www.thepiratebay.se", "Pirate Bay"]);
-        array.push(["https://mail.protonmail.com/login", "Proton Mail"]);
-        array.push(["https://animebytes.tv", "Animebytes"]);
         array.push(["http://www.amazon.com", "Amazon"]);
         array.push(["http://xkcd.com/", "XKCD"]);
-        array.push(["https://redacted.ch/", "Redacted"]);
         array.push(["https://www.imgur.com", "Imgur"]);
         array.push(["https://www.isucu.org/", "ISU CU"]);
+    }
+    else if(arrayType === QuickLinkTypes.Torrent){
+        array.push(["https://www.thepiratebay.se", "Pirate Bay"]);
+        array.push(["https://www.torrentdownloads.me", "Torrent Downloads"]);
         array.push(["https://gazellegames.net/", "Gazelle Games"]);
+        array.push(["https://redacted.ch/", "Redacted"]);
+        array.push(["https://animebytes.tv", "Animebytes"]);
+        array.push(["http://kalenpw.com:9091", "Web client"]);
+        array.push(["https://awesome-hd.me", "Awesome HD"]);
     }
 
     array.sort(function (a, b){
@@ -219,9 +198,9 @@ function createKeyBindArray() {
         [50, "http://kalenpw.com:5222"],
         [51, "https://mail.google.com"],
         [52, "https://github.com/kalenpw"],
-        [53, "http://kalenpw.com"],
-        [54, "http://elearn.isu.edu"],
-        [55, "https://www.netflix.com"],
+        [53, "http://elearn.isu.edu"],
+        [54, "https://www.netflix.com"],
+        [55, "https://mail.protonmail.com/login"],
         [56, "https://www.reddit.com"],
         [57, "http://www.twitter.com"],
         [48, "https://www.youtube.com"]
@@ -233,5 +212,6 @@ var QuickLinkTypes = Object.freeze({
     School: 'School',
     Work: 'Work',
     Programming: 'Programming',
-    Misc: 'Misc'
+    Torrent: 'Torrent',
+    Misc: 'Misc',
 });
