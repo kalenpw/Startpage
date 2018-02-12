@@ -216,7 +216,7 @@ function keypressed(event) {
 function createKeyBindArray() {
     var keyBinds = [
         [49, "http://4chan.org/vg/vsg"],
-        [50, "http://kalenpw.com:8096"],
+        [50, "http://kalenpw.com:5222"],
         [51, "https://mail.google.com"],
         [52, "https://github.com/kalenpw"],
         [53, "http://kalenpw.com"],

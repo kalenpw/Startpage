@@ -34,7 +34,7 @@
     		</div>
             <div>
     			<p><span>2</span></p>
-    			<a href="http://kalenpw.com:8096">
+    			<a href="http://kalenpw.com:5222">
     				<img class="icon" src="Images/emby.png" width="100px" height="100px" alt="Emby">
     			</a>
     		</div>
