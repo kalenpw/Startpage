@@ -110,7 +110,7 @@ function getArrayFor(arrayType){
     if(arrayType === QuickLinkTypes.School){
         array.push(["https://bengalweb.isu.edu/cp/home/displaylogin", "Bengal Web"]);
         array.push(["https://www2.cose.isu.edu/~bodipaul/courses/4481/", "CS 4481"]);
-        array.push(["https://www.myeducator.com/reader/web/617b/", "Info 4470"]);
+        array.push(["https://www.myeducator.com/reader/web/617ac/", "Info 4470"]);
     }
     else if(arrayType === QuickLinkTypes.Work){
         array.push(["https://cms.isu.edu/terminalfour/login.jsp", "T4 Login"]);
@@ -118,6 +118,7 @@ function getArrayFor(arrayType){
         array.push(["https://t4community.slack.com", "T4 Slack"]);
         array.push(["https://selfservice.terminalfour.com/servicedesk/customer/portal/1", "T4 Support"]);
         array.push(["https://cms.isu.edu/terminalfour/SiteManager?ctfn=query", "T4 SQL Query"]);
+        array.push(["https://gitlab.com/willkale/ISU", "GitLab"]);
     }
     else if(arrayType === QuickLinkTypes.Programming){
         array.push(["https://hub.spigotmc.org/javadocs/bukkit/", "Bukkit API"]);
