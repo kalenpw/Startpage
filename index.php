@@ -22,75 +22,9 @@
 		Frequented
 		</h3>
         <div id="freqLinks">
-    		<div>
-    			<p><span>1</span></p>
-    			<a href="https://4chan.org/vg/vsg">
-    				<img class="icon" src="Images/4chan.png" width="100px" height="100px" alt="Facebook">
-    			</a>
-            </div>
-
-            <div>
-    			<p><span>2</span></p>
-    			<a href="http://kalenpw.com:5222">
-    				<img class="icon" src="Images/emby.png" width="100px" height="100px" alt="Emby">
-    			</a>
-            </div>
-
-    		<div>
-    			<p><span>3</span></p>
-    			<a href="https://mail.google.com/mail/">
-    				<img class="icon" src="Images/gmail.png" width="100px" height="100px" alt="Gmail">
-    			</a>
-            </div>
-
-            <div>
-                <p><span>4</span></p>
-                <a href="https://github.com/kalenpw">
-                    <img class="icon" src="Images/github.png" width="100px" height="100px" alt="GitHub">
-                </a>
-            </div>
-
-    		<div>
-    			<p><span>5</span></p>
-    			<a href="http://elearn.isu.edu">
-    				<img class="icon" src="Images/moodle.png" width="100px" height="100px" alt="Moodle">
-    			</a>
-            </div>
-
-    		<div>
-    			<p><span>6</span></p>
-    			<a href="http://www.netflix.com">
-    				<img class="icon" src="Images/netflix.png" width="100px" height="100px" alt="Netflix">
-    			</a>
-            </div>
-
-    		<div>
-    			<p><span>7</span></p>
-    			<a href="https://mail.protonmail.com/login">
-    				<img class="icon" src="Images/protonMail.png" width="100px" height="100px" alt="Proton Mail">
-    			</a>
-            </div>
-            
-    		<div>
-    			<p><span>8</span></p>
-    			<a href="http://www.reddit.com">
-    				<img class="icon" src="Images/reddit.png" width="100px" height="100px" alt="Reddit">
-    			</a>
-            </div>
-
-    		<div>
-    			<p><span>9</span></p>
-    			<a href="http://www.twitter.com">
-    				<img class="icon" src="Images/twitter.png" width="100px" height="100px" alt="Twitter">
-    			</a>
-            </div>
-
-    		<div>
-    			<p><span>0</span></p>
-    			<a href="http://www.youtube.com">
-    				<img class="icon" src="Images/youtube.png" width="100px" height="100px" alt="Youtube">
-    			</a>
-    		</div>
+            <?php 
+                generateFrequentLinks();
+            ?>
         </div>
 		
 		<h3>
@@ -158,7 +92,25 @@
             {
                 return "<a href='$url' class='quickLink hidden innerLink $className'>$name</a>";
             }
+
+            function generateFrequentLinks()
+            {
+
+
+                $string = file_get_contents("./Data/frequent-links.json");
+                $json = json_decode($string, true);
+
+                for($i = 0; $i < count($json); $i++)
+                {
+                    $hotkey = $json[$i]["hotkey"];
+                    $url = $json[$i]["url"];
+                    $image = $json[$i]["image"];
+                    $fullImage = "Images/$image";
+
+                    echo "<div>";
+                    echo "<p><span>$hotkey</span></p>";
+                    echo "<a href='$url'><img class='icon' src='$fullImage' width='100px' height='100px' alt='$image'></a></div>";
+                }
+
+            }
 ?>
-
-
-
