@@ -119,6 +119,8 @@ function getArrayFor(arrayType){
         array.push(["https://selfservice.terminalfour.com/servicedesk/customer/portal/1", "T4 Support"]);
         array.push(["https://cms.isu.edu/terminalfour/SiteManager?ctfn=query", "T4 SQL Query"]);
         array.push(["https://gitlab.com/willkale/ISU", "GitLab"]);
+        array.push(["https://trello.com/b/4nA2HEKy/web-redesign-2018", "Trello"]);
+        array.push(["https://github.com/isuwebcom/redesign18", "Github"]);
     }
     else if(arrayType === QuickLinkTypes.Programming){
         array.push(["https://hub.spigotmc.org/javadocs/bukkit/", "Bukkit API"]);
