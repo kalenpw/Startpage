@@ -5,7 +5,7 @@
 		Homepage
         </title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-		<script src="Homepage.js"></script>
+        <script src="Homepage.js"></script>
 		<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
@@ -96,8 +96,26 @@
 		<h3>
 		Quick Links
 		</h3>
-		<div id="quickLinkList">
+        <div id="quickLinkList">
+            <?php
+                
+            $categories = [
+                "School",
+                "Work",
+                "Programming",
+                "Torrent",
+                "Misc"
+            ];
 
+            for($i = 0; $i < count($categories); $i++)
+            {
+                $cat = $categories[$i];
+                echo "<li id='$cat' class='quickLink'>$cat</li>";
+                $path = "./Data/" . strtolower($cat) . "-links.json";
+                generateQuicklinks($path, $cat);
+            }
+
+            ?>
         </div>
         
         <h3>
@@ -120,3 +138,27 @@
         
 	</body>
 </HTML>
+
+<?php
+            function generateQuicklinks($jsonFile, $type)
+            {
+                $string = file_get_contents($jsonFile);
+                $json = json_decode($string, true);
+                
+                for($i = 0; $i < count($json); $i++)
+                {
+                    $title = $json[$i]["title"];
+                    $url = $json[$i]["url"];
+                    $link = formatQuickLink($url, $title, $type);
+                    echo $link;
+                }
+
+            }   
+            function formatQuickLink($url, $name, $className)
+            {
+                return "<a href='$url' class='quickLink hidden innerLink $className'>$name</a>";
+            }
+?>
+
+
+

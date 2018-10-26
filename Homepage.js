@@ -11,17 +11,11 @@ window.onload = function () {
     }
     updateImageSizes();
     handleClock();
-    
-    getTopLevelQuickLinkArray();
 
-    var topLevelLinks = new Array();
-    for(var key in QuickLinkTypes){
-        topLevelLinks.push(document.getElementById(key));
-    }
-
-    for(let i = 0; i < topLevelLinks.length; i++){
-        topLevelLinks[i].addEventListener("click", handleQuickLinkClick);
-    }
+    var topLevelLinks = $("#quickLinkList li");
+    topLevelLinks.each(function(index){
+        $(this).click(handleQuickLinkClick);
+    });
 }
 
 window.onresize = updateImageSizes;
@@ -105,82 +99,6 @@ function getH3FromContents(str){
     return document.getElementById(id);
 }
 
-function getArrayFor(arrayType){
-    let array = new Array();
-    if(arrayType === QuickLinkTypes.School){
-        array.push(["https://bengalweb.isu.edu/cp/home/displaylogin", "Bengal Web"]);
-        array.push(["https://www2.cose.isu.edu/~bodipaul/courses/4481/", "CS 4481"]);
-        array.push(["https://www.myeducator.com/reader/web/617ac/", "Info 4470"]);
-    }
-    else if(arrayType === QuickLinkTypes.Work){
-        array.push(["https://cms.isu.edu/terminalfour/login.jsp", "T4 Login"]);
-        array.push(["https://community.terminalfour.com/info/api/terminalfour-8.0/index.html", "T4 Api"]);
-        array.push(["https://t4community.slack.com", "T4 Slack"]);
-        array.push(["https://selfservice.terminalfour.com/servicedesk/customer/portal/1", "T4 Support"]);
-        array.push(["https://cms.isu.edu/terminalfour/SiteManager?ctfn=query", "T4 SQL Query"]);
-        array.push(["https://gitlab.com/willkale/ISU", "GitLab"]);
-        array.push(["https://trello.com/b/4nA2HEKy/web-redesign-2018", "Trello"]);
-        array.push(["https://github.com/isuwebcom/redesign18", "Github"]);
-    }
-    else if(arrayType === QuickLinkTypes.Programming){
-        array.push(["https://hub.spigotmc.org/javadocs/bukkit/", "Bukkit API"]);
-        array.push(["http://stackexchange.com/", "Stack Exchange"]);
-        array.push(["https://gitlab.com", "GitLab"]);
-        array.push(["https://code.excelereight.tk/wrcwpk", "Excel Git"]);
-        array.push(["http://kalenpw.com:81", "Dev Server"]);
-    }
-    else if(arrayType === QuickLinkTypes.Misc){
-        array.push(["http://www.amazon.com", "Amazon"]);
-        array.push(["http://xkcd.com/", "XKCD"]);
-        array.push(["https://www.imgur.com", "Imgur"]);
-        array.push(["https://www.isucu.org/", "ISU CU"]);
-    }
-    else if(arrayType === QuickLinkTypes.Torrent){
-        array.push(["https://www.thepiratebay.se", "Pirate Bay"]);
-        array.push(["https://www.torrentdownloads.me", "Torrent Downloads"]);
-        array.push(["https://gazellegames.net/", "Gazelle Games"]);
-        array.push(["https://redacted.ch/", "Redacted"]);
-        array.push(["https://animebytes.tv", "Animebytes"]);
-        array.push(["http://kalenpw.com:9091", "Web client"]);
-        array.push(["https://awesome-hd.me", "Awesome HD"]);
-    }
-
-    array.sort(function (a, b){
-        var one = a[1];
-        var two = b[1];
-
-        if(one < two){
-            return -1;
-        }
-        if(one > two){
-            return 1;
-        }
-        return 0;
-    });
-
-    return array;
-}
-
-
-function formatQuickLink(url, name, className){
-    return '<a href="' + url + '" class="quickLink hidden innerLink ' + className + '">' + name + '</a>';
-}
-
-function formatTopLevelLink(name){
-    return "<li id='" + name + "' class='quickLink'>" + name + "</li>";
-}
-
-function getTopLevelQuickLinkArray(){
-    let formatted = "";
-    for(var key in QuickLinkTypes){
-        formatted += formatTopLevelLink(key);
-        let linkArray = getArrayFor(key);
-        for(let i = 0; i < linkArray.length; i++){
-            formatted += formatQuickLink(linkArray[i][0], linkArray[i][1], key);
-        }
-    }
-    document.getElementById("quickLinkList").innerHTML = formatted;
-}
 
 //Handles key presses
 function keypressed(event) {
@@ -211,10 +129,3 @@ function createKeyBindArray() {
     return keyBinds;
 }
 
-var QuickLinkTypes = Object.freeze({
-    School: 'School',
-    Work: 'Work',
-    Programming: 'Programming',
-    Torrent: 'Torrent',
-    Misc: 'Misc',
-});
