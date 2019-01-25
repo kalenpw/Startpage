@@ -1,10 +1,18 @@
 [
     {
         "url": "https://gitlab.com/willkale/ISU",
-        "title": "Bengal Web"
+        "title": "GitLab"
     },
     {
-        "url": "https://www2.cose.isu.edu/~bodipaul/courses/sp19/4499/",
+        "url": "https://www2.cose.isu.edu/~bodipaul/courses/sp19/4499/schedule.php",
         "title": "CS 4499"
+    },
+    {
+        "url": "https://www.isu.edu/cs/current-students/office-hours/",
+        "title": "Office Hours"
+    },
+    {
+        "url": "https://www.webassign.net/wa-auth/login",
+        "title": "Web Assign"
     }
 ]
