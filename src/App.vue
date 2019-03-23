@@ -15,8 +15,10 @@ export default {
 </script>
 
 <style>
-#app {
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+*{
+    text-transform: lowercase;
+    font-family: Ubuntu, "Helvetica", times, roman, serif;
+    letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
