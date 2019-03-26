@@ -4,7 +4,7 @@
             <h2 class="title has-text-grey">{{category}}</h2>
         </header>
         <div v-if="showLinks" class="list is-hoverable has-text-grey">
-            <a v-for="item in items" v-bind:key="item" :href="item.url" class="list-item">{{item.name}}</a>
+            <a v-for="item in items" v-bind:key="item.name" :href="item.url" class="list-item">{{item.name}}</a>
         </div>
     </div>
 </template>

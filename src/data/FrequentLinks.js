@@ -2,42 +2,50 @@ export default [
     {
         name: "reddit",
         icon: "fab fa-reddit",
-        url: "https://www.reddit.com"
+        url: "https://www.reddit.com",
+        hotkey: "r"
     },
     {
         name: "Twitter",
         icon: "fab fa-twitter",
-        url: "https://www.twitter.com"
+        url: "https://www.twitter.com",
+        hotkey: "t"
     },
     {
         name: "gmail",
         icon: "fas fa-envelope",
-        url: "https://gmail.com"
+        url: "https://gmail.com",
+        hotkey: "m"
     },
     {
         name: "github",
         icon: "fab fa-github",
-        url: "https://github.com/kalenpw"
+        url: "https://github.com/kalenpw",
+        hotkey: "g"
     },
     {
         name: "netflix",
         icon: "fas fa-tv",
-        url: "https://www.netflix.com"
+        url: "https://www.netflix.com",
+        hotkey: "n"
     },
     {
         name: "moodle",
         icon: "fas fa-graduation-cap",
-        url: "http://elearn.isu.edu/"
+        url: "http://elearn.isu.edu/",
+        hotkey: "e"
     },
     {
         name: "youtube",
         icon: "fab fa-youtube",
-        url: "https://youtube.com"
+        url: "https://youtube.com",
+        hotkey: "y"
     },
     {
         name: "protonmail",
         icon: "fas fa-lock",
-        url: "https://mail.protonmail.com/login"
+        url: "https://mail.protonmail.com/login",
+        hotkey: "p"
     },
 
 ]

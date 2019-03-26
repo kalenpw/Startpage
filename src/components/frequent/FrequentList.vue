@@ -1,11 +1,11 @@
 <template>
     <div>
         <div class="section columns">
-                <FrequentItem
-                    v-for="frequentItem in frequentItems"
-                    v-bind:key="frequentItem.name"
-                    :frequentItem="frequentItem"
-                ></FrequentItem>
+            <FrequentItem
+                v-for="frequentItem in frequentItems"
+                v-bind:key="frequentItem.name"
+                :frequentItem="frequentItem"
+            ></FrequentItem>
         </div>
     </div>
 </template>
