@@ -88,5 +88,10 @@ export default [
         category: "Torrent",
         url: "http://kalen.pw:9091/",
         name: "Web client"
+    },
+    {
+        category: "School",
+        url: "https://www.gradescope.com/courses/33660",
+        name: "Gradescope"
     }
 ];

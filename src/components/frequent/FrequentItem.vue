@@ -9,16 +9,20 @@
 
 <script>
 import EventBus from "@/eventbus.js";
+import { setTimeout } from "timers";
 
 export default {
     name: "FrequentItem",
     props: {
         frequentItem: Object
     },
-    created(){
-        EventBus.$on("keypress", event =>{
-            if(event.key == this.frequentItem.hotkey){
-                window.location.href = this.frequentItem.url;
+    created() {
+        EventBus.$on("keypress", event => {
+            if (event.key == this.frequentItem.hotkey) {
+                //timeout so ctrl+l and search doesn't trigger a shortcut
+                setTimeout(() => {
+                    window.location.href = this.frequentItem.url;
+                }, 500);
             }
         });
     }
