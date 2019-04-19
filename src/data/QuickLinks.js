@@ -93,5 +93,10 @@ export default [
         category: "School",
         url: "https://www.gradescope.com/courses/33660",
         name: "Gradescope"
+    },
+    {
+        category: "Misc",
+        url: "http://schedukal.ml",
+        name: "Schedukal"
     }
 ];

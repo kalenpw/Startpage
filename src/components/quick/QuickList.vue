@@ -3,6 +3,7 @@
         <QuickItem category="School" :items="schoolArray"></QuickItem>
         <QuickItem category="Work" :items="workArray"></QuickItem>
         <QuickItem category="Torrent" :items="torrentArray"></QuickItem>
+        <QuickItem category="Misc" :items="miscArray"></QuickItem>
     </div>
 </template>
 
@@ -19,12 +20,14 @@ export default {
         this.schoolArray = quickLinkList.filter(link => link.category == "School");
         this.workArray = quickLinkList.filter(link => link.category == "Work");
         this.torrentArray = quickLinkList.filter(link => link.category == "Torrent");
+        this.miscArray = quickLinkList.filter(link => link.category === "Misc");
     },
     data(){
         return{
             schoolArray: [],
             workArray: [],
-            torrentArray: []
+            torrentArray: [],
+            miscArray: [],
         }
     }
 
