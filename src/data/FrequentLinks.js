@@ -30,10 +30,10 @@ export default [
         hotkey: "n"
     },
     {
-        name: "moodle",
-        icon: "fas fa-graduation-cap",
-        url: "http://elearn.isu.edu/",
-        hotkey: "e"
+        name: "bengal web",
+        icon: "fas fa-paw",
+        url: "https://bengalweb.isu.edu",
+        hotkey: "b"
     },
     {
         name: "youtube",
