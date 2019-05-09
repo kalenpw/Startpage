@@ -98,5 +98,10 @@ export default [
         category: "Misc",
         url: "http://schedukal.ml",
         name: "Schedukal"
+    },
+    {
+        category: "Misc",
+        url: "https://mastodon.social",
+        name: "Mastodon - kalenpw"
     }
 ];
