@@ -1,16 +1,16 @@
 <template>
     <div class="section columns">
-        <!-- <QuickItem category="School" :items="schoolArray"></QuickItem> -->
-        <QuickItem category="Work" :items="workArray"></QuickItem>
-        <QuickItem category="Torrent" :items="torrentArray"></QuickItem>
-        <QuickItem category="Misc" :items="miscArray"></QuickItem>
+        <QuickItem category="Hospital" :items="hospitalLinks"></QuickItem>
+        <QuickItem category="Work" :items="workLinks"></QuickItem>
+        <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
+        <QuickItem category="Misc" :items="miscLinks"></QuickItem>
     </div>
 </template>
 
 <script>
 import QuickItem from "@/components/quick/QuickItem.vue";
 import quickLinkList from "@/data/QuickLinks.js";
-import {alphabeticalSort} from "@/utils/sort.js";
+// import {alphabeticalSort} from "@/utils/sort.js";
 export default {
     name: "QuickList",
     components:{
@@ -18,18 +18,19 @@ export default {
     },
     mounted(){
         // this.schoolArray = quickLinkList.filter(link => link.category == "School");
-        this.workArray = quickLinkList.filter(link => link.category == "Work");
-        this.torrentArray = quickLinkList.filter(link => link.category == "Torrent");
-        this.miscArray = quickLinkList.filter(link => link.category === "Misc");
+        this.workLinks = quickLinkList.filter(link => link.category == "Work");
+        this.torrentLinks = quickLinkList.filter(link => link.category == "Torrent");
+        this.miscLinks = quickLinkList.filter(link => link.category === "Misc");
+        this.hospitalLinks = quickLinkList.filter(link => link.category === "Hospital");
     },
     data(){
         return{
             // schoolArray: [],
-            workArray: [],
-            torrentArray: [],
-            miscArray: [],
+            workLinks: [],
+            torrentLinks: [],
+            miscLinks: [],
+            hospitalLinks: []
         }
     }
-
 };
 </script>

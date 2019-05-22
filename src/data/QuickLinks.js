@@ -103,5 +103,11 @@ export default [
         category: "Misc",
         url: "https://mastodon.social",
         name: "Mastodon - kalenpw"
-    }
+    },
+    {
+        category: "Hospital",
+        url: "https://portal.eightelevengroup.com/login",
+        name: "Timecard"
+    },
+
 ];
