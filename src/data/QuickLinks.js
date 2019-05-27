@@ -109,5 +109,10 @@ export default [
         url: "https://portal.eightelevengroup.com/login",
         name: "Timecard"
     },
+    {
+        category: "Misc",
+        url: "https://kalen.pw:5222",
+        name: "Emby"
+    },
 
 ];
