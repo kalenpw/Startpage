@@ -27,7 +27,7 @@ export default [
     {
         category: "Work",
         name: "GitHub",
-        url: "https://github.com/isuwebcom/redesign18",
+        url: "https://github.com/isuwebcom/Work",
     },
     {
         category: "Work",
@@ -105,14 +105,14 @@ export default [
         name: "Mastodon - kalenpw"
     },
     {
-        category: "Hospital",
-        url: "https://portal.eightelevengroup.com/login",
-        name: "Timecard"
-    },
-    {
         category: "Misc",
         url: "https://kalen.pw:5222",
         name: "Emby"
+    },
+    {
+        category: "Misc",
+        url: "https://www.hulu.com",
+        name: "Hulu"
     },
 
 ];

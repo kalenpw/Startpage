@@ -1,6 +1,5 @@
 <template>
     <div class="section columns">
-        <QuickItem category="Hospital" :items="hospitalLinks"></QuickItem>
         <QuickItem category="Work" :items="workLinks"></QuickItem>
         <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
         <QuickItem category="Misc" :items="miscLinks"></QuickItem>
@@ -21,7 +20,6 @@ export default {
         this.workLinks = quickLinkList.filter(link => link.category == "Work");
         this.torrentLinks = quickLinkList.filter(link => link.category == "Torrent");
         this.miscLinks = quickLinkList.filter(link => link.category === "Misc");
-        this.hospitalLinks = quickLinkList.filter(link => link.category === "Hospital");
     },
     data(){
         return{
@@ -29,7 +27,6 @@ export default {
             workLinks: [],
             torrentLinks: [],
             miscLinks: [],
-            hospitalLinks: []
         }
     }
 };
