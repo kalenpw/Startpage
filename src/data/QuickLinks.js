@@ -1,64 +1,5 @@
 export default [
-    {
-        category: "School",
-        name: "GitLab",
-        url: "https://gitlab.com/willkale/ISU",
-    },
-    {
-        category: "School",
-        name: "CS 4499",
-        url: "https://www2.cose.isu.edu/~bodipaul/courses/sp19/4499/schedule.php",
-    },
-    {
-        category: "School",
-        name: "Office Hours",
-        url: "https://www.isu.edu/cs/current-students/office-hours/",
-    },
-    {
-        category: "School",
-        name: "Web Assign",
-        url: "https://www.webassign.net/wa-auth/login",
-    },
-    {
-        category: "Work",
-        name: "GitLab",
-        url: "https://gitlab.com/willkale/ISU",
-    },
-    {
-        category: "Work",
-        name: "GitHub",
-        url: "https://github.com/isuwebcom/Work",
-    },
-    {
-        category: "Work",
-        name: "T4 API",
-        url: "https://community.terminalfour.com/info/api/terminalfour-8.0/index.html"
-    },
-    {
-        category: "Work",
-        name: "T4 Login",
-        url: "https://cms.isu.edu/terminalfour/login.jsp"
-    },
-    {
-        category: "Work",
-        name: "T4 SQL Query",
-        url: "https://cms.isu.edu/terminalfour/SiteManager?ctfn=query"
-    },
-    {
-        category: "Work",
-        name: "Slack",
-        url: "https://t4community.slack.com/"
-    },
-    {
-        category: "Work",
-        name: "T4 Support",
-        url: "https://selfservice.terminalfour.com/servicedesk/customer/portal/1"
-    },
-    {
-        category: "Work",
-        name: "Trello",
-        url: "https://trello.com/b/4nA2HEKy/web-redesign-2018"
-    },
+
     {
         url: "https://animebytes.tv/",
         name: "Animebytes",
@@ -89,10 +30,18 @@ export default [
         url: "http://kalen.pw:9091/",
         name: "Web client"
     },
+    //////////
+    // misc //
+    //////////
     {
-        category: "School",
-        url: "https://www.gradescope.com/courses/33660",
-        name: "Gradescope"
+        category: "Misc",
+        url: "https://www.hulu.com",
+        name: "Hulu"
+    },
+    {
+        category: "Misc",
+        url: "https://kalen.pw:8096",
+        name: "Jellyfin"
     },
     {
         category: "Misc",
@@ -104,15 +53,22 @@ export default [
         url: "https://mastodon.social",
         name: "Mastodon - kalenpw"
     },
+    ///////////
+    // 4chan //
+    ///////////
     {
-        category: "Misc",
-        url: "https://kalen.pw:5222",
-        name: "Emby"
+        category: "4chan",
+        url: "https://4chan.org/fit",
+        name: "fit"
     },
     {
-        category: "Misc",
-        url: "https://www.hulu.com",
-        name: "Hulu"
+        category: "4chan",
+        url: "https://4chan.org/g",
+        name: "g"
     },
-
+    {
+        category: "4chan",
+        url: "https://4chan.org/wg",
+        name: "wg"
+    },
 ];

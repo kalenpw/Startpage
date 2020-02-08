@@ -29,12 +29,12 @@ export default [
         url: "https://www.netflix.com",
         hotkey: "n"
     },
-    {
-        name: "bengal web",
-        icon: "fas fa-paw",
-        url: "https://bengalweb.isu.edu",
-        hotkey: "b"
-    },
+    // {
+    //     name: "4chan",
+    //     icon: "fas fa-paw",
+    //     url: "https://www.4chan.org",
+    //     hotkey: "4"
+    // },
     {
         name: "youtube",
         icon: "fab fa-youtube",

@@ -1,6 +1,6 @@
 <template>
     <div class="section columns">
-        <QuickItem category="Work" :items="workLinks"></QuickItem>
+        <QuickItem category="4chan" :items="chanLinks"></QuickItem>
         <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
         <QuickItem category="Misc" :items="miscLinks"></QuickItem>
     </div>
@@ -20,6 +20,7 @@ export default {
         this.workLinks = quickLinkList.filter(link => link.category == "Work");
         this.torrentLinks = quickLinkList.filter(link => link.category == "Torrent");
         this.miscLinks = quickLinkList.filter(link => link.category === "Misc");
+        this.chanLinks = quickLinkList.filter(link => link.category === "4chan");
     },
     data(){
         return{
@@ -27,6 +28,7 @@ export default {
             workLinks: [],
             torrentLinks: [],
             miscLinks: [],
+            chanLinks:[]
         }
     }
 };
