@@ -58,17 +58,17 @@ export default [
     ///////////
     {
         category: "4chan",
-        url: "https://4chan.org/fit",
+        url: "https://4chan.org/fit/catalog",
         name: "fit"
     },
     {
         category: "4chan",
-        url: "https://4chan.org/g",
+        url: "https://4chan.org/g/catalog",
         name: "g"
     },
     {
         category: "4chan",
-        url: "https://4chan.org/wg",
+        url: "https://4chan.org/wg/catalog",
         name: "wg"
     },
 ];
