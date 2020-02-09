@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="section columns">
+        <div class="section columns is-hidden-mobile">
             <FrequentItem
                 v-for="frequentItem in frequentItems"
                 v-bind:key="frequentItem.name"
