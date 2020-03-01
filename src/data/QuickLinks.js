@@ -16,6 +16,11 @@ export default [
         name: "Gazelle Games"
     },
     {
+        name: "LibGen",
+        url: "https://libgen.me",
+        category: "Torrent"
+    },
+    {
         category: "Torrent",
         url: "https://www.thepiratebay.rocks/",
         name: "Pirate Bay"
@@ -29,29 +34,34 @@ export default [
     // misc //
     //////////
     {
-        category: "Misc",
-        url: "https://www.hulu.com",
-        name: "Hulu"
-    },
-    {
-        category: "Misc",
-        url: "https://media.kalenpw.com",
-        name: "Jellyfin"
-    },
-    {
-        category: "Misc",
-        url: "http://schedukal.ml",
-        name: "Schedukal"
-    },
-    {
-        category: "Misc",
-        url: "https://mastodon.social",
-        name: "Mastodon - kalenpw"
-    },
-    {
-        category: "Misc",
+        name: "Blog",
         url: "https://blog.kalen.pw",
-        name: "Blog"
+        category: "Misc",
+    },
+    {
+        name: "Homepage",
+        url: "https://kalen.pw",
+        category: "Misc",
+    },
+    {
+        name: "Hulu",
+        url: "https://www.hulu.com",
+        category: "Misc",
+    },
+    {
+        name: "Jellyfin",
+        url: "https://media.kalenpw.com",
+        category: "Misc",
+    },
+    {
+        name: "Schedukal",
+        url: "http://schedukal.ml",
+        category: "Misc",
+    },
+    {
+        name: "Mastodon - kalenpw",
+        url: "https://mastodon.social",
+        category: "Misc",
     },
     ///////////
     // 4chan //
