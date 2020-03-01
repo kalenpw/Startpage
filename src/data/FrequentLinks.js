@@ -42,11 +42,10 @@ export default [
         hotkey: "y"
     },
     {
-        name: "protonmail",
-        icon: "fas fa-lock",
-        url: "https://mail.protonmail.com/login",
-        hotkey: "p"
-    },
-
+        name: "wiki",
+        icon: "fab fa-wikipedia-w",
+        url: "https://wiki.kalen.pw",
+        hotkey: "w"
+    }
 ]
 

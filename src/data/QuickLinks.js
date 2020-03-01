@@ -25,11 +25,6 @@ export default [
         url: "https://redacted.ch/",
         name: "Redacted"
     },
-    {
-        category: "Torrent",
-        url: "http://kalen.pw:9091/",
-        name: "Web client"
-    },
     //////////
     // misc //
     //////////
@@ -40,7 +35,7 @@ export default [
     },
     {
         category: "Misc",
-        url: "https://kalen.pw:8096",
+        url: "https://media.kalenpw.com",
         name: "Jellyfin"
     },
     {
@@ -52,6 +47,11 @@ export default [
         category: "Misc",
         url: "https://mastodon.social",
         name: "Mastodon - kalenpw"
+    },
+    {
+        category: "Misc",
+        url: "https://blog.kalen.pw",
+        name: "Blog"
     },
     ///////////
     // 4chan //
