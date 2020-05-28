@@ -63,6 +63,16 @@ export default [
         url: "https://mastodon.social",
         category: "Misc",
     },
+    {
+        name: "Hacker News",
+        url: "https://news.ycombinator.com/",
+        category: "Misc",
+    },
+    {
+        name: "Proton Mail",
+        url: "https://mail.protonmail.com/login",
+        category: "Misc",
+    },
     ///////////
     // 4chan //
     ///////////
