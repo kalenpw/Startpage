@@ -73,6 +73,11 @@ export default [
         url: "https://mail.protonmail.com/login",
         category: "Misc",
     },
+    {
+        name: "Workout Histoy",
+        url: "https://docs.google.com/spreadsheets/d/1AaaR5GOo-SY_dmiPuIXeCiSuvn_QIx11Hbt7Ao5DRus/edit#gid=1517199199",
+        category: "Misc"
+    },
     ///////////
     // 4chan //
     ///////////
