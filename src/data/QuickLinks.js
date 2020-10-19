@@ -54,11 +54,6 @@ export default [
         category: "Misc",
     },
     {
-        name: "Schedukal",
-        url: "http://schedukal.ml",
-        category: "Misc",
-    },
-    {
         name: "Mastodon - kalenpw",
         url: "https://mastodon.social",
         category: "Misc",
@@ -72,6 +67,11 @@ export default [
         name: "Proton Mail",
         url: "https://mail.protonmail.com/login",
         category: "Misc",
+    },
+    {
+        name: "Nextcloud",
+        url: "https://cloud.kalenpw.com/app/files",
+        category: "Misc"
     },
     {
         name: "Workout Histoy",
