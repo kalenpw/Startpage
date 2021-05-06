@@ -1,5 +1,4 @@
 export default [
-
     {
         url: "https://animebytes.tv/",
         name: "Animebytes",
@@ -81,19 +80,43 @@ export default [
     ///////////
     // 4chan //
     ///////////
+    // {
+    //     category: "4chan",
+    //     url: "https://4chan.org/fit/catalog",
+    //     name: "fit"
+    // },
+    // {
+    //     category: "4chan",
+    //     url: "https://4chan.org/g/catalog",
+    //     name: "g"
+    // },
+    // {
+    //     category: "4chan",
+    //     url: "https://4chan.org/wg/catalog",
+    //     name: "wg"
+    // },
+    //////////////
+    // Japanese //
+    //////////////
     {
-        category: "4chan",
-        url: "https://4chan.org/fit/catalog",
-        name: "fit"
+        category: "Japanese",
+        url: "https://www.tofugu.com/japanese/learn-hiragana/",
+        name: "Tofugu Guide"
     },
     {
-        category: "4chan",
-        url: "https://4chan.org/g/catalog",
-        name: "g"
+        category: "Japanese",
+        url: "https://kana-quiz.tofugu.com/",
+        name: "Tofugu Kana Quiz"
     },
     {
-        category: "4chan",
-        url: "https://4chan.org/wg/catalog",
-        name: "wg"
+        category: "Japanese",
+        url: "https://drive.google.com/drive/u/3/folders/1q_zQ3gekqV6aVaik3uX8sZ6Nkr8CAHOF",
+        name: "Genki PDF"
     },
+    {
+        category: "Japanese",
+        url: "https://www.duolingo.com/learn",
+        name: "Duolingo"
+    },
+
 ];

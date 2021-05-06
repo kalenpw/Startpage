@@ -1,6 +1,6 @@
 <template>
     <div class="section columns">
-        <QuickItem category="4chan" :items="chanLinks"></QuickItem>
+        <QuickItem category="Japanese" :items="japaneseLinks"></QuickItem>
         <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
         <QuickItem category="Misc" :items="miscLinks"></QuickItem>
     </div>
@@ -16,19 +16,15 @@ export default {
         QuickItem
     },
     mounted(){
-        // this.schoolArray = quickLinkList.filter(link => link.category == "School");
-        this.workLinks = quickLinkList.filter(link => link.category == "Work");
         this.torrentLinks = quickLinkList.filter(link => link.category == "Torrent");
         this.miscLinks = quickLinkList.filter(link => link.category === "Misc");
-        this.chanLinks = quickLinkList.filter(link => link.category === "4chan");
+        this.japaneseLinks = quickLinkList.filter(link => link.category === "Japanese");
     },
     data(){
         return{
-            // schoolArray: [],
-            workLinks: [],
+            japaneseLinks:[],
             torrentLinks: [],
             miscLinks: [],
-            chanLinks:[]
         }
     }
 };

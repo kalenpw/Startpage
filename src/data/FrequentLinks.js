@@ -1,7 +1,7 @@
 export default [
     {
         name: "reddit",
-        icon: "fab fa-reddit",
+        icon: "fab fa-reddit-alien",
         url: "https://www.reddit.com",
         hotkey: "r"
     },
