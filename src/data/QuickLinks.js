@@ -115,6 +115,11 @@ export default [
     },
     {
         category: "Japanese",
+        url: "https://www.wanikani.com/",
+        name: "WaniKani"
+    },
+    {
+        category: "Japanese",
         url: "https://www.duolingo.com/learn",
         name: "Duolingo"
     },
