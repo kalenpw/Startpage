@@ -100,7 +100,7 @@ export default [
     //////////////
     {
         category: "Japanese",
-        url: "https://www.tofugu.com/japanese/learn-hiragana/",
+        url: "https://www.tofugu.com/learn-japanese/",
         name: "Tofugu Guide"
     },
     {
