@@ -29,6 +29,11 @@ export default [
         url: "https://redacted.ch/",
         name: "Redacted"
     },
+    {
+        category: "Torrent",
+        url: "https://torrent.kalenpw.com",
+        name: "Web interface"
+    },
     //////////
     // misc //
     //////////
