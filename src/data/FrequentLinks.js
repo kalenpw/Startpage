@@ -46,6 +46,12 @@ export default [
         icon: "fab fa-wikipedia-w",
         url: "https://wiki.kalen.pw",
         hotkey: "w"
-    }
+    },
+    {
+        name: "chess",
+        icon: "fas fa-chess-knight",
+        url: "https://lichess.org",
+        hotkey: "c"
+    },
 ]
 
