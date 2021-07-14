@@ -38,13 +38,13 @@ export default [
     // misc //
     //////////
     {
-        name: "Blog",
-        url: "https://blog.kalen.pw",
+        name: "kalen.pw",
+        url: "https://kalen.pw",
         category: "Misc",
     },
     {
-        name: "Homepage",
-        url: "https://kalen.pw",
+        name: "Blog",
+        url: "https://blog.kalen.pw",
         category: "Misc",
     },
     {
@@ -128,5 +128,47 @@ export default [
         url: "https://www.duolingo.com/learn",
         name: "Duolingo"
     },
-
+    ///////////
+    // Money //
+    ///////////
+    {
+        category: "Money",
+        name: "Mint",
+        url: "https://mint.intuit.com/"
+    },
+    {
+        category: "Money",
+        name: "Alliant",
+        url: "https://www.alliantcreditunion.org/"
+    },
+    {
+        category: "Money",
+        name: "ISU CU",
+        url: "https://lookoutcu.com/"
+    },
+    {
+        category: "Money",
+        name: "Capital One",
+        url: "https://www.capitalone.com/"
+    },
+    {
+        category: "Money",
+        name: "SoFi",
+        url: "https://www.sofi.com/"
+    },
+    {
+        category: "Money",
+        name: "Vanguard",
+        url: "https://investor.vanguard.com/home"
+    },
+    {
+        category: "Money",
+        name: "Wealthfront",
+        url: "https://www.wealthfront.com/login"
+    },
+    {
+        category: "Money",
+        name: "TransAmerica",
+        url: "https://secure.transamerica.com/login/sign-in/login.html?TAM_OP=login"
+    },
 ];
