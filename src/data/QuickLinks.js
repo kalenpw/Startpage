@@ -158,6 +158,11 @@ export default [
     },
     {
         category: "Money",
+        name: "Robinhood",
+        url: "https://robinhood.com"
+    },
+    {
+        category: "Money",
         name: "Vanguard",
         url: "https://investor.vanguard.com/home"
     },
@@ -170,5 +175,10 @@ export default [
         category: "Money",
         name: "TransAmerica",
         url: "https://secure.transamerica.com/login/sign-in/login.html?TAM_OP=login"
+    },
+    {
+        category: "Money",
+        name: "Great Lakes",
+        url: "https://mygreatlakes.org/educate/login.html"
     },
 ];

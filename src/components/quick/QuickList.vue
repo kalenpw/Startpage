@@ -2,8 +2,8 @@
     <div class="section columns">
         <QuickItem category="Japanese" :items="japaneseLinks"></QuickItem>
         <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
-        <QuickItem category="Money" :items="moneyLinks"></QuickItem>
         <QuickItem category="Misc" :items="miscLinks"></QuickItem>
+        <QuickItem category="Money" :items="moneyLinks"></QuickItem>
     </div>
 </template>
 
