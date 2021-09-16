@@ -6,11 +6,6 @@ export default [
     },
     {
         category: "Torrent",
-        url: "https://awesome-hd.me/",
-        name: "Awesome HD"
-    },
-    {
-        category: "Torrent",
         url: "https://gazellegames.net/",
         name: "Gazelle Games"
     },
@@ -43,22 +38,17 @@ export default [
         category: "Misc",
     },
     {
-        name: "Blog",
+        name: "blog.kalen.pw",
         url: "https://blog.kalen.pw",
         category: "Misc",
     },
     {
-        name: "Hulu",
-        url: "https://www.hulu.com",
-        category: "Misc",
+        name: "cloud.kalenpw.com",
+        url: "https://cloud.kalenpw.com/app/files",
+        category: "Misc"
     },
     {
-        name: "Jellyfin",
-        url: "https://media.kalenpw.com",
-        category: "Misc",
-    },
-    {
-        name: "Mastodon - kalenpw",
+        name: "Mastodon",
         url: "https://mastodon.social",
         category: "Misc",
     },
@@ -73,9 +63,9 @@ export default [
         category: "Misc",
     },
     {
-        name: "Nextcloud",
-        url: "https://cloud.kalenpw.com/app/files",
-        category: "Misc"
+        name: "AOL Mail",
+        url: "https://mail.aol.com/webmail-std/en-us/suite",
+        category: "Misc",
     },
     {
         name: "Workout Histoy",
@@ -103,31 +93,31 @@ export default [
     //////////////
     // Japanese //
     //////////////
-    {
-        category: "Japanese",
-        url: "https://www.tofugu.com/learn-japanese/",
-        name: "Tofugu Guide"
-    },
-    {
-        category: "Japanese",
-        url: "https://kana-quiz.tofugu.com/",
-        name: "Tofugu Kana Quiz"
-    },
-    {
-        category: "Japanese",
-        url: "https://drive.google.com/drive/u/3/folders/1q_zQ3gekqV6aVaik3uX8sZ6Nkr8CAHOF",
-        name: "Genki PDF"
-    },
-    {
-        category: "Japanese",
-        url: "https://www.wanikani.com/",
-        name: "WaniKani"
-    },
-    {
-        category: "Japanese",
-        url: "https://www.duolingo.com/learn",
-        name: "Duolingo"
-    },
+    // {
+    //     category: "Japanese",
+    //     url: "https://www.tofugu.com/learn-japanese/",
+    //     name: "Tofugu Guide"
+    // },
+    // {
+    //     category: "Japanese",
+    //     url: "https://kana-quiz.tofugu.com/",
+    //     name: "Tofugu Kana Quiz"
+    // },
+    // {
+    //     category: "Japanese",
+    //     url: "https://drive.google.com/drive/u/3/folders/1q_zQ3gekqV6aVaik3uX8sZ6Nkr8CAHOF",
+    //     name: "Genki PDF"
+    // },
+    // {
+    //     category: "Japanese",
+    //     url: "https://www.wanikani.com/",
+    //     name: "WaniKani"
+    // },
+    // {
+    //     category: "Japanese",
+    //     url: "https://www.duolingo.com/learn",
+    //     name: "Duolingo"
+    // },
     ///////////
     // Money //
     ///////////
@@ -180,5 +170,23 @@ export default [
         category: "Money",
         name: "Great Lakes",
         url: "https://mygreatlakes.org/educate/login.html"
+    },
+    ///////////////////
+    // ENTERTAINMENT //
+    ///////////////////
+    {
+        name: "Hulu",
+        url: "https://www.hulu.com",
+        category: "Entertainment",
+    },
+    {
+        name: "Jellyfin",
+        url: "https://media.kalenpw.com",
+        category: "Entertainment",
+    },
+    {
+        category: "Entertainment",
+        name: "Google Podcasts",
+        url: "https://podcasts.google.com"
     },
 ];

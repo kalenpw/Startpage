@@ -1,6 +1,6 @@
 <template>
     <div class="section columns">
-        <QuickItem category="Japanese" :items="japaneseLinks"></QuickItem>
+        <QuickItem category="Entertainment" :items="entertainmentLinks"></QuickItem>
         <QuickItem category="Torrent" :items="torrentLinks"></QuickItem>
         <QuickItem category="Misc" :items="miscLinks"></QuickItem>
         <QuickItem category="Money" :items="moneyLinks"></QuickItem>
@@ -19,12 +19,12 @@ export default {
     mounted(){
         this.torrentLinks = quickLinkList.filter(link => link.category == "Torrent");
         this.miscLinks = quickLinkList.filter(link => link.category === "Misc");
-        this.japaneseLinks = quickLinkList.filter(link => link.category === "Japanese");
+        this.entertainmentLinks = quickLinkList.filter(link => link.category === "Entertainment");
         this.moneyLinks = quickLinkList.filter(link => link.category === "Money");
     },
     data(){
         return{
-            japaneseLinks:[],
+            entertainmentLinks:[],
             torrentLinks: [],
             miscLinks: [],
             moneyLinks: [],
