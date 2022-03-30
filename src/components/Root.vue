@@ -1,12 +1,11 @@
 <template>
-    <section class="hero is-dark is-bold is-fullheight">
+    <section :class="colorScheme" class="hero is-bold is-fullheight">
         <div class="hero-head">
             <!-- <InfoBar></InfoBar> -->
             <FrequentList></FrequentList>
             <QuickList></QuickList>
         </div>
-        <div class="hero-body">
-        </div>
+        <div class="hero-body"></div>
     </section>
 </template>
 
@@ -20,9 +19,20 @@ export default {
     components: {
         FrequentList,
         InfoBar,
-        QuickList
+        QuickList,
     },
-    props: {}
+    computed: {
+        colorScheme: () => {
+            if (
+                window.matchMedia &&
+                window.matchMedia("(prefers-color-scheme: dark)").matches
+            ) {
+                return "is-dark";
+            }
+            return "is-light";
+        },
+    },
+    props: {},
 };
 </script>
 
