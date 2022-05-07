@@ -1,0 +1,13 @@
+@model IndexModel
+
+<div class="section columns is-hidden-mobile">
+    @foreach (var quickLink in Model.QuickLinks)
+    {
+        <div class="column has-text-centered">
+            <a href="@quickLink.URL" class="has-text-grey">
+                <i class="fa-4x @quickLink.Icon"></i>
+                @quickLink.Hotkey
+            </a>
+        </div>
+    }
+</div>

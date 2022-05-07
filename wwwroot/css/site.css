@@ -1,0 +1,68 @@
+* {
+  text-transform: lowercase;
+  font-family: Ubuntu, "Helvetica", times, roman, serif;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**************
+ * SCROLL BAR *
+ **************/
+/* chrome */
+::-webkit-scrollbar {
+  width: 12px;
+  background: #222;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(15, 15, 15, 0.8);
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(15, 15, 15, 0.4);
+}
+
+/* firefox */
+html {
+  scrollbar-color: #000 #222;
+}
+
+.list {
+  background-color: #222;
+}
+
+.list-item {
+  background-color: #222 !important;
+  border: none !important;
+}
+
+.list-item:hover {
+  background-color: #111 !important;
+}
+
+.list-item:last-child {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.columns:last-child {
+  margin-bottom: 0 !important;
+}
+
+.hero {
+  justify-content: flex-start !important;
+}

@@ -1,0 +1,52 @@
+@model IndexModel
+
+<div class="section columns">
+    <div class="column">
+        <header class="card-header">
+            <h2 class="title has-text-grey">Entertainment</h2>
+        </header>
+        <div class="list is-hoverable has-text-grey">
+            @foreach (var item in Model.EntertainmentLinks)
+            {
+                <a href="@item.URL" class="list-item">@item.Name</a>
+            }
+        </div>
+    </div>
+
+    <div class="column">
+        <header class="card-header">
+            <h2 class="title has-text-grey">Torrent</h2>
+        </header>
+        <div class="list is-hoverable has-text-grey">
+            @foreach (var item in Model.TorrentLinks)
+            {
+                <a href="@item.URL" class="list-item">@item.Name</a>
+            }
+        </div>
+    </div>
+
+    <div class="column">
+        <header class="card-header">
+            <h2 class="title has-text-grey">Misc</h2>
+        </header>
+        <div class="list is-hoverable has-text-grey">
+            @foreach (var item in Model.MiscLinks)
+            {
+                <a href="@item.URL" class="list-item">@item.Name</a>
+            }
+        </div>
+    </div>
+
+    <div class="column">
+        <header class="card-header">
+            <h2 class="title has-text-grey">Money</h2>
+        </header>
+        <div class="list is-hoverable has-text-grey">
+            @foreach (var item in Model.MoneyLinks)
+            {
+                <a href="@item.URL" class="list-item">@item.Name</a>
+            }
+        </div>
+    </div>
+
+</div>
