@@ -23,17 +23,17 @@ public class IndexModel : PageModel
     public void OnGet()
     {
         var quickJson = System.IO.File.ReadAllText("./Data/quick_links.json");
-        this.QuickLinks = JsonSerializer.Deserialize<List<QuickLink>>(quickJson)
+        QuickLinks = JsonSerializer.Deserialize<List<QuickLink>>(quickJson)
             .OrderBy(w => w.Hotkey).ToList();
 
         var frequentJson = System.IO.File.ReadAllText("./Data/frequent_links.json");
-        this.EntertainmentLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
+        EntertainmentLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
             .Where(w => w.Category == "Entertainment").ToList();
-        this.TorrentLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
+        TorrentLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
             .Where(w => w.Category == "Torrent").ToList();
-        this.MiscLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
+        MiscLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
             .Where(w => w.Category == "Misc").ToList();
-        this.MoneyLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
+        MoneyLinks = JsonSerializer.Deserialize<List<FrequentLink>>(frequentJson)
             .Where(w => w.Category == "Money").ToList();
     }
 }
