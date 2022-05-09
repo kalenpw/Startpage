@@ -66,3 +66,11 @@ html {
 .hero {
   justify-content: flex-start !important;
 }
+
+.columns {
+  margin-bottom: 0 !important;
+}
+
+.section {
+  padding-bottom: 0px !important;
+}
