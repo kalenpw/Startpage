@@ -1,9 +1,9 @@
 export default [
-    {
-        url: "https://animebytes.tv/",
-        name: "Animebytes",
-        category: "Torrent"
-    },
+    // {
+    //     url: "https://animebytes.tv/",
+    //     name: "Animebytes",
+    //     category: "Torrent"
+    // },
     {
         category: "Torrent",
         url: "https://gazellegames.net/",
@@ -11,12 +11,12 @@ export default [
     },
     {
         name: "LibGen",
-        url: "https://libgen.me",
+        url: "https://libgen.is",
         category: "Torrent"
     },
     {
         category: "Torrent",
-        url: "https://www.thepiratebay.rocks/",
+        url: "https://thepiratebay10.org",
         name: "Pirate Bay"
     },
     {
@@ -67,29 +67,6 @@ export default [
         url: "https://mail.aol.com/webmail-std/en-us/suite",
         category: "Misc",
     },
-    {
-        name: "Workout Histoy",
-        url: "https://docs.google.com/spreadsheets/d/1AaaR5GOo-SY_dmiPuIXeCiSuvn_QIx11Hbt7Ao5DRus/edit#gid=1517199199",
-        category: "Misc"
-    },
-    ///////////
-    // 4chan //
-    ///////////
-    // {
-    //     category: "4chan",
-    //     url: "https://4chan.org/fit/catalog",
-    //     name: "fit"
-    // },
-    // {
-    //     category: "4chan",
-    //     url: "https://4chan.org/g/catalog",
-    //     name: "g"
-    // },
-    // {
-    //     category: "4chan",
-    //     url: "https://4chan.org/wg/catalog",
-    //     name: "wg"
-    // },
     //////////////
     // Japanese //
     //////////////
@@ -133,13 +110,18 @@ export default [
     },
     {
         category: "Money",
-        name: "ISU CU",
-        url: "https://lookoutcu.com/"
+        name: "Capital One",
+        url: "https://www.capitalone.com/"
     },
     {
         category: "Money",
-        name: "Capital One",
-        url: "https://www.capitalone.com/"
+        name: "American Express",
+        url: "https://www.americanexpress.com/en-us/account/login"
+    },
+    {
+        category: "Money",
+        name: "Citi",
+        url: "https://www.citi.com/"
     },
     {
         category: "Money",
@@ -153,6 +135,11 @@ export default [
     },
     {
         category: "Money",
+        name: "Fidelity",
+        url: "https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init"
+    },
+    {
+        category: "Money",
         name: "Vanguard",
         url: "https://investor.vanguard.com/home"
     },
@@ -163,13 +150,8 @@ export default [
     },
     {
         category: "Money",
-        name: "TransAmerica",
-        url: "https://secure.transamerica.com/login/sign-in/login.html?TAM_OP=login"
-    },
-    {
-        category: "Money",
-        name: "Great Lakes",
-        url: "https://mygreatlakes.org/educate/login.html"
+        name: "Nelnet",
+        url: "https://secure.nelnet.com/account/login"
     },
     ///////////////////
     // ENTERTAINMENT //
@@ -180,8 +162,13 @@ export default [
         category: "Entertainment",
     },
     {
-        name: "Jellyfin",
-        url: "https://media.kalenpw.com",
+        name: "Netflix",
+        url: "https://www.netflix.com/browse",
+        category: "Entertainment",
+    },
+    {
+        name: "Disney+",
+        url: "https://www.disneyplus.com/",
         category: "Entertainment",
     },
     {

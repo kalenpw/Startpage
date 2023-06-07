@@ -25,9 +25,9 @@ export default [
     },
     {
         name: "netflix",
-        icon: "fas fa-tv",
-        url: "https://www.netflix.com",
-        hotkey: "n"
+        icon: "fas fa-film",
+        url: "https://media.kalenpw.com",
+        hotkey: "j"
     },
     // {
     //     name: "4chan",
